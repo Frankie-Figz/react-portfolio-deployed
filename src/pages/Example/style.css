@@ -1,0 +1,9 @@
+.fa-angle-double-left {
+    font-family: FontAwesome;
+    content: "\f100";
+}
+
+.fa-angle-double-right {
+    font-family: FontAwesome;
+    content: "\f101";
+}

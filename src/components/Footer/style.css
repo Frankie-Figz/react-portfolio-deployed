@@ -1,0 +1,18 @@
+img.footer-icon {
+  width: 30px;
+  height: auto;
+}
+
+.navbar-nav {
+  flex-direction: row;
+  text-align: center;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  height: 100px;
+  background-color: white;
+  width: 100%;
+}

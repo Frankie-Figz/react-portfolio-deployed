@@ -1,0 +1,84 @@
+import React from "react";
+import Jumbotron from "../../components/Jumbotron";
+import Picture from "./portfolio-picture.jpg";
+import "./style.css";
+
+function About() {
+  return (
+    <div>
+      <Jumbotron>
+      <div className="container">
+        <div className="row">
+          <div className="col-md-12">
+            
+            <hr></hr>
+
+          <div className= "container">
+            <div className="row">
+                
+                <div className="col-3">
+                    <img src={Picture} alt="portfolio" className="portfolio-picture"/>
+                    <div> A deep appreciation of algorithms and a relentless drive to solve a problem are the cornerstone of my work ethos. </div>
+                </div>
+
+                <div className="col-9">
+                  <p className="left-align">
+                    <strong> Education: </strong> 
+                    B.S in Discrete Mathematics from the Georgia Institute of Technology (GeorgiaTech)
+                  </p>
+                  <p className="left-align">
+                    <strong> Certification: </strong> 
+                    Full-stack Web Development from Georgia Washington University
+                  </p>
+                  <p className="left-align">
+                    <strong> Web Development: </strong> 
+                    Node.JS, JavaScript, jQuery, React.JS, Express
+                  </p>
+                  <p className="left-align">
+                    <strong> Database Experience : </strong> 
+                    5+ years of experience in SQL (PostgreSQL, mySQL, sql-Lite) and database management. Recently introduced to no-SQL databases (mongoDB, firebase).
+                  </p>
+                  <p className="left-align">
+                    <strong> General Purpose Programing Languages: </strong> 
+                    Python, R-statistical programming, Java, C/C++
+                  </p>
+                  <p className="left-align">
+                    <strong> Notable Software Experience: </strong> 
+                    ADempiere ERP, Odoo ERP + CRM, Proxmox Virtualization, Ubuntu Linux user, Jaspersoft BI, Tableu, Plotly.
+                  </p>
+                  <p className="left-align">
+                    <strong> Seeking A Position In: </strong>
+                    Looking to develop applications to affect positive change in society that leverage the use of data science techniques.
+                    I enjoy data science practices and am looking to learn more about the it's uses.
+                    Harvesting user input to optimize the UX experience and potential.
+                    Hungry for knowledge and proud to be auto-didactic.
+                    Eager to learn. 
+                    Decomposing a problem into sequential and parallel tasks. Detailing the task details and auxilliar resources to achieve that task. 
+                    Assigning the right individuals to carry out the task.
+                    Measuring the task execution to assure on-time completion.
+                    Flexibily adjusting a task to assure it's succesful completion.
+                    Adept at setting and achieving goals, managing time, and analyzing and solving problems.
+                  </p>
+                  <p className="left-align">
+                    <strong> Attitude: </strong>
+                    Seeking to continue my professional development and utilize my knowledge to affect positive change in our society.
+                    A hunger for knowledge drives me to constantly be learning and keeping up with new trends.
+                    Not understanding is not a problem; with patience and mindfulness a problem will be understood.
+                    Self talk to appease frustration; for optimal problem resolution it is important to have peace of mind.
+                  </p>
+                </div>
+
+              </div>
+            </div>
+            
+            <hr></hr>
+          
+          </div>
+        </div>
+      </div>
+      </Jumbotron>
+    </div>
+  );
+}
+
+export default About;
