@@ -38,13 +38,5 @@
     "description": "A game to test your memory based on Rick and Morty characters. The goal of the game is to click on a sequence of non-repeating characters. If you click on a character that has been clicked before the round is lose. Score 13 points and you win the game.",
     "techstack": "nodeJS, React.js, Github Pages, HTML5, CSS3",
     "link": "https://frankie-figz.github.io/deployed-click-me/"
-  },
-  {
-    "id": 6,
-    "image": "https://i.imgur.com/kPYXd18.png",
-    "title": "Date Night",
-    "description": "Find compatible matches based on your personality. Fill out a detailed personality survey and get a list of matches based on a personality proximity algorithm.",
-    "techstack": "nodeJS, mySQL DB, Express, Handlebars, Heroku, HTML5, CSS3",
-    "link": "https://protected-shelf-50360.herokuapp.com/"
   }
 ]

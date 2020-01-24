@@ -9,7 +9,7 @@ function Footer() {
     <footer className="footer">
       <div class="container">
         <div class = "row">
-          <div class = "col-12">
+          <div class = "col-lg-3 col-md-12 col-sm-12">
             <div>
               <a 
                   href="https://www.linkedin.com/in/francisco-javier-vannini-robelo-b294a182/" 
@@ -24,7 +24,7 @@ function Footer() {
               </a>
             </div>
           </div>
-          <div class = "col-12">
+          <div class = "col-lg-3 col-md-12 col-sm-12">
             <div>
                 <a 
                   href="mailto:fjvannini@gmail.com" 
@@ -40,7 +40,7 @@ function Footer() {
 
             </div>
           </div>
-          <div class = "col-12">
+          <div class = "col-lg-3 col-md-12 col-sm-12">
             <a 
               href="https://github.com/Frankie-Figz?tab=repositories" 
               id="github"

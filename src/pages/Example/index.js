@@ -23,10 +23,10 @@ export default class Test extends React.Component {
   createChildren = () => projects.map(project =>
     <div class= "container">
       <div class="row justify-content-center">
-        <div class= "col-md-8 col-sm-12">
+        <div class= "col-lg-8 col-md-12 col-sm-12">
           <img height = "300" src = {project.image} alt = ""/>
         </div>
-        <div class= "col-md-4 col-sm-12">
+        <div class= "col-lg-4 col-md-12 col-sm-12">
           <div key={project.id} style={{ height: 600}}>
             <div> <strong> Project Name : </strong> {project.title} </div>
             <div> <strong> Description : </strong> {project.description} </div>
