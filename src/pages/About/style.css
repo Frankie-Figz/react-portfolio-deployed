@@ -12,3 +12,19 @@ p.left-align {
 * {
   font-family: 'Roboto', sans-serif;
 }
+
+.tab { text-indent:40px }
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  height: 60px;
+  background-color: white;
+  width: 100%;
+}
+
+.height-frustration {
+  height: 2000px;
+  background-color: #e9ecef;
+}

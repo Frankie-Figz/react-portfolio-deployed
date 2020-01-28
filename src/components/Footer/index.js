@@ -7,10 +7,10 @@ import GithubLogo from "./contact-icons-01.png";
 function Footer() {
   return (
     <footer className="footer">
-      <div class="container">
-        <div class = "row">
-          <div class = "col-lg-3 col-md-12 col-sm-12">
-            <div>
+      <div className="container-fluid">
+        <div className = "row">
+          <div className = "col-lg-3 col-md-12 col-sm-12">
+
               <a 
                   href="https://www.linkedin.com/in/francisco-javier-vannini-robelo-b294a182/" 
                   id="linkedin"
@@ -22,10 +22,10 @@ function Footer() {
                   />
                     linkedin
               </a>
-            </div>
+            
           </div>
-          <div class = "col-lg-3 col-md-12 col-sm-12">
-            <div>
+          <div className = "col-lg-3 col-md-12 col-sm-12">
+            
                 <a 
                   href="mailto:fjvannini@gmail.com" 
                   id="email"
@@ -37,10 +37,8 @@ function Footer() {
                   />
                   email
                 </a>
-
-            </div>
           </div>
-          <div class = "col-lg-3 col-md-12 col-sm-12">
+          <div className = "col-lg-3 col-md-12 col-sm-12">
             <a 
               href="https://github.com/Frankie-Figz?tab=repositories" 
               id="github"

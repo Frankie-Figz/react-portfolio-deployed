@@ -5,74 +5,36 @@ import "./style.css";
 
 function About() {
   return (
-    <div>
+    <div className = "height-frustration">
       <Jumbotron>
       <div className="container">
         <div className="row">
           <div className="col-md-12">
-            
             <hr></hr>
-
           <div className= "container">
             <div className="row">
-                
                 <div className="col-3">
                     <img src={Picture} alt="portfolio" className="portfolio-picture"/>
                     <div> A deep appreciation of algorithms and a relentless drive to solve a problem are the cornerstone of my work ethos. </div>
                 </div>
-
                 <div className="col-9">
                   <p className="left-align">
-                    <strong> Education: </strong> 
-                    B.S in Discrete Mathematics from the Georgia Institute of Technology (GeorgiaTech)
+                    <strong> Brand Statement: </strong>
                   </p>
-                  <p className="left-align">
-                    <strong> Certification: </strong> 
-                    Full-stack Web Development from Georgia Washington University
+                  <p className="left-align tab">
+                    A Mathematician with experience as a Data Scientist, Database Architect and Full stack web developer who is excited to develop responsive, user friendly and fluid applications / websites. 
+                    I received my Bachelor of Science in Discrete Mathematics from Georgiatech in 2009 and a Full stack web development certificate from George Washington University in 2019. 
+                    Successfully modernized a seafood company by migrating their business processes from a legacy database system in FoxPro to a modern ERP mounted over Postgres SQL and in the process optimized business process to best practices. 
+                    After the migration process the company was able to reduce the lag on the end of month closing from 60 days to 10 days and have access to a myriad of new reports (customizable on request) to use in the decision-making process. 
+                    With healthy business processes (and data) in place time series forecasts and data relations were developed to be used in an algorithmic construction of the annual budget.
                   </p>
-                  <p className="left-align">
-                    <strong> Web Development: </strong> 
-                    Node.JS, JavaScript, jQuery, React.JS, Express
-                  </p>
-                  <p className="left-align">
-                    <strong> Database Experience : </strong> 
-                    5+ years of experience in SQL (PostgreSQL, mySQL, sql-Lite) and database management. Recently introduced to no-SQL databases (mongoDB, firebase).
-                  </p>
-                  <p className="left-align">
-                    <strong> General Purpose Programing Languages: </strong> 
-                    Python, R-statistical programming, Java, C/C++
-                  </p>
-                  <p className="left-align">
-                    <strong> Notable Software Experience: </strong> 
-                    ADempiere ERP, Odoo ERP + CRM, Proxmox Virtualization, Ubuntu Linux user, Jaspersoft BI, Tableu, Plotly.
-                  </p>
-                  <p className="left-align">
-                    <strong> Seeking A Position In: </strong>
-                    Looking to develop applications to affect positive change in society that leverage the use of data science techniques.
-                    I enjoy data science practices and am looking to learn more about the it's uses.
-                    Harvesting user input to optimize the UX experience and potential.
-                    Hungry for knowledge and proud to be auto-didactic.
-                    Eager to learn. 
-                    Decomposing a problem into sequential and parallel tasks. Detailing the task details and auxilliar resources to achieve that task. 
-                    Assigning the right individuals to carry out the task.
-                    Measuring the task execution to assure on-time completion.
-                    Flexibily adjusting a task to assure it's succesful completion.
-                    Adept at setting and achieving goals, managing time, and analyzing and solving problems.
-                  </p>
-                  <p className="left-align">
-                    <strong> Attitude: </strong>
-                    Seeking to continue my professional development and utilize my knowledge to affect positive change in our society.
-                    A hunger for knowledge drives me to constantly be learning and keeping up with new trends.
-                    Not understanding is not a problem; with patience and mindfulness a problem will be understood.
-                    Self talk to appease frustration; for optimal problem resolution it is important to have peace of mind.
+                  <p className="left-align tab">
+                    Positioned well to provide data analysis, transformation, extrapolations and input processes by leveraging my background in mathematics, relevant job experience, relentless problem-solving drive and imaginative approaches.
                   </p>
                 </div>
-
               </div>
             </div>
-            
             <hr></hr>
-          
           </div>
         </div>
       </div>
@@ -80,5 +42,4 @@ function About() {
     </div>
   );
 }
-
 export default About;
