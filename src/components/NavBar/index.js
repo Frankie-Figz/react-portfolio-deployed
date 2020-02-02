@@ -7,7 +7,7 @@ import Logo from "./logo-02.png";
 function Navbar() {
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
-      <img src={Logo} alt="logo" className="logo"/>
+      <img src={Logo} alt="logo" className="desktop-only logo"/>
           <NavLink
             exact 
             to="/"

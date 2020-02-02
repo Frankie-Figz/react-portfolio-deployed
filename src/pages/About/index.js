@@ -13,11 +13,11 @@ function About() {
             <hr></hr>
           <div className= "container">
             <div className="row">
-                <div className="col-3">
+                <div className="col-lg-3 col-md-3 col-sm-8">
                     <img src={Picture} alt="portfolio" className="portfolio-picture"/>
                     <div> A deep appreciation of algorithms and a relentless drive to solve a problem are the cornerstone of my work ethos. </div>
                 </div>
-                <div className="col-9">
+                <div className="desktop-only col-9">
                   <p className="left-align">
                     <strong> Brand Statement: </strong>
                   </p>

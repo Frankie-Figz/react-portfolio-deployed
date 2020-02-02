@@ -16,9 +16,43 @@ img.logo {
   background-color: #eceff1;
 }
 
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .navbar__link {
+    margin: 0.50em;
+    font-size: 1.00em;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .navbar__link {
+    margin: 0.50em;
+    font-size: 1.0em;
+  }
+
+  .desktop-only {
+    src:""
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .navbar__link {
+    margin: 0.75em;
+    font-size: 1.5em;
+  }
+} 
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .navbar__link {
+    margin: 1em;
+    font-size: 2em;
+  }
+}
+
 .navbar__link {
-  margin: 1em;
-  font-size: 2em;
   font-family: 'Roboto', sans-serif;
   cursor: pointer;
   text-decoration: none;
@@ -30,6 +64,7 @@ img.logo {
 
 .navbar__link:hover {
   transform: translateY(-2px);
+  text-decoration: none;
 }
 
 .navbar__link--active {
@@ -37,3 +72,20 @@ img.logo {
   transition: border-bottom .5s ease-in-out;
   font-weight: bolder;
 }
+
+/* unvisited link */
+/* a:link {
+  color: #FF0000;
+} */
+/* visited link */
+/* a:visited {
+  color: #00FF00;
+} */
+/* mouse over link */
+/* a:hover {
+  text-decoration: none
+} */
+/* selected link */
+/* a:active {
+  color: #0000FF;
+} */
