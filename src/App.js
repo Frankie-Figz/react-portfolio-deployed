@@ -19,8 +19,8 @@ function App() {
           <Route exact path="/portfolio" component={Portfolio} />
           <Route exact path="/contact" component={Contact} />
           <Route exact path="/example" component={Example} />
+          <Footer />
         </Wrapper>
-        <Footer />
       </div>
     </Router>
   );

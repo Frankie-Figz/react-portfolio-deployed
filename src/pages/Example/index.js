@@ -21,12 +21,13 @@ export default class Test extends React.Component {
   }
 
   createChildren = () => projects.map(project =>
-    <div class= "container">
-      <div class="row justify-content-center">
-        <div class= "col-lg-8 col-md-12 col-sm-12">
+    <div key={project.id} className= "container">
+      <div className="row justify-content-center">
+        
+        <div className= "col-lg-8 col-md-12 col-sm-12">
           <img height = "300" src = {project.image} alt = ""/>
         </div>
-        <div class= "col-lg-4 col-md-12 col-sm-12">
+        <div className= "col-lg-4 col-md-12 col-sm-12">
           <div key={project.id} style={{ height: 600}}>
             <div> <strong> Project Name : </strong> {project.title} </div>
             <div> <strong> Description : </strong> {project.description} </div>
@@ -49,7 +50,7 @@ export default class Test extends React.Component {
     } = this.state;
 
     return (
-      <div class = "jumbotron">
+      <div className = "jumbotron" style={{ height: 600}}>
         <ItemsCarousel
         // Placeholder configurations
         enablePlaceholder

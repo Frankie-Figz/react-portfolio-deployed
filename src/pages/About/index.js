@@ -6,7 +6,7 @@ import "./style.css";
 function About() {
   return (
     <div className = "height-frustration">
-      <Jumbotron>
+      <Jumbotron style={{ height: 600}}>
       <div className="container">
         <div className="row">
           <div className="col-md-12">
