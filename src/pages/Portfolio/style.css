@@ -16,4 +16,20 @@
     background-color: white;
     width: 100%;
   }
+
+  img.footer-icon {
+    width: 30px;
+    height: auto;
+  }
   
+  #github-collab {
+      text-decoration: none;
+      color: black;
+  }
+
+  .butts {
+      justify-content: center;
+      text-align: center;
+      align-items: center;
+      margin-top: 10px;
+  }

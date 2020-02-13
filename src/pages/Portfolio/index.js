@@ -5,6 +5,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngleDoubleLeft, faAngleDoubleRight } from '@fortawesome/free-solid-svg-icons';
 import "./style.css";
 import Button from 'react-bootstrap/Button';
+import GithubLogo from "./contact-icons-01.png";
+
 
 export default class Portfolio extends React.Component {
 
@@ -29,18 +31,49 @@ export default class Portfolio extends React.Component {
     <div key={project.id} className= "container">
       <div className="row justify-content-center">
         
-        <div className= "col-lg-8 col-md-12 col-sm-12">
+        <div className= "col-lg-7 col-md-12 col-sm-12">
           <img height = "300" src = {project.image} alt = ""/>
         </div>
-        <div className= "col-lg-4 col-md-12 col-sm-12">
-          <div key={project.id} style={{ height: 600}}>
+        <div className= "col-lg-5 col-md-12 col-sm-12">
+          <div key={project.id} style={{ height: 800 }}>
             <div> <strong> Project Name : </strong> {project.title} </div>
             <div> <strong> Description : </strong> {project.description} </div>
             <div> <strong> Technology stack : </strong> {project.techstack} </div>
             {/* <div> <strong> Deployment Link : </strong> <a href = {project.link} target="_blank" rel="noopener noreferrer">  LINK </a></div> */}
+            <div>
+              {project.collaborators.length > 0 &&
+                (
+                  <div> <strong> Collaborators : </strong> </div>
+                )
+              }
 
-            <Button href = {project.link} target="_blank" rel="noopener noreferrer" variant = "secondary" > Test Run </Button>
+              {project.collaborators.length > 0 &&
+                (
+                  project.collaborators.map(collab => <div> 
+                    
+                    <a href={collab.github} id="github-collab">
+                    <img src={GithubLogo} alt="github" className="footer-icon"/>
 
+                    {collab.name}
+                  
+                    </a>
+                    
+                    </div>)
+                )
+              }
+            </div>
+                     
+            <div className = "row align-items-end" >
+
+              <div className = "butt col-lg-6 col-md-12 col-sm-12" >
+                <Button className = "butts" href = {project.link} target="_blank" rel="noopener noreferrer" variant = "secondary" > TEST RUN </Button>
+              </div>
+              <div className = "butt col-lg-6 col-md-12 col-sm-12">
+                <Button className = "butts" href = {project.github} target="_blank" rel="noopener noreferrer" variant = "secondary" > GITHUB CODE </Button>
+              </div>
+
+            </div>
+            
           </div>
         </div>
 
