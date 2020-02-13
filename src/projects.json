@@ -18,7 +18,7 @@
     "description": "Cosmic-themed hangman. Guess the word letter by letter. If you guess incorrectly you lose a point. Lose more than 5 points and GAME OVER.",
     "techstack": "HTML5, CCS3, Bootstrap, Vanilla Javascript",
     "link": "https://frankie-figz.github.io/replace-the-space/",
-    "github": "",
+    "github": "https://github.com/Frankie-Figz/replace-the-space",
     "collaborators" : [
       {"name" : "Emma Stotz", "github" : "https://github.com/emmastotz"}
     ]
@@ -31,7 +31,7 @@
     "description": "Scrapes the New York Times. Article headlines and summaries are saved to a DB. You can later archive and take notes on your favorite articles.",
     "techstack": "nodeJS, mongoDB, axios, cherios, express, heroku, HTML5, CSS3, heroku",
     "link": "https://cryptic-plains-78961.herokuapp.com/",
-    "github": "",
+    "github": "https://github.com/Frankie-Figz/scrabby-doo",
     "collaborators" : []
   },
   {
@@ -53,7 +53,7 @@
     "image": "https://i.imgur.com/8dFnmq1.png",
     "title": "Click-me Game",
     "description": "A game to test your memory based on Rick and Morty characters. The goal of the game is to click on a sequence of non-repeating characters. If you click on a character that has been clicked before the round is lose. Score 13 points and you win the game.",
-    "github": "",
+    "github": "https://github.com/Frankie-Figz/click-me",
     "techstack": "nodeJS, React.js, Github Pages, HTML5, CSS3",
     "link": "https://frankie-figz.github.io/deployed-click-me/",
     "collaborators" : []
