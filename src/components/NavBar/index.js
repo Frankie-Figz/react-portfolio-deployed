@@ -18,7 +18,7 @@ function Navbar() {
           </NavLink>
 
           <NavLink
-            to="/example"
+            to="/portfolio"
             activeClassName="navbar__link--active"
             className="navbar__link"      
           >

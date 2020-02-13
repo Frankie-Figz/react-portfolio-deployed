@@ -1,70 +1,84 @@
-import React, { Component} from "react";
+import React from 'react';
+import ItemsCarousel from 'react-items-carousel';
 import projects from "../../projects.json";
-import Jumbotron from "../../components/Jumbotron";
-import Card from "../../components/Card";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faAngleDoubleLeft, faAngleDoubleRight } from '@fortawesome/free-solid-svg-icons';
+import "./style.css";
 
-class Portfolio extends Component {
-  state = {
-    projects,
-    id: "",
-    chevronWidth: 50
-  };
+export default class Portfolio extends React.Component {
 
-  handleClick = id => {
-    this.setState({ id });
-    // link to the project
-  };
+  componentWillMount() {
+    this.setState({
+      children: [],
+      activeItemIndex: 0,
+    });
+
+    setTimeout(() => {
+      this.setState({
+        children: this.createChildren(),
+      })
+    }, 100);
+  }
+
+  createChildren = () => projects.map(project =>
+    <div key={project.id} className= "container">
+      <div className="row justify-content-center">
+        
+        <div className= "col-lg-8 col-md-12 col-sm-12">
+          <img height = "300" src = {project.image} alt = ""/>
+        </div>
+        <div className= "col-lg-4 col-md-12 col-sm-12">
+          <div key={project.id} style={{ height: 600}}>
+            <div> <strong> Project Name : </strong> {project.title} </div>
+            <div> <strong> Description : </strong> {project.description} </div>
+            <div> <strong> Technology stack : </strong> {project.techstack} </div>
+            <div> <strong> Deployment Link : </strong> <a href = {project.link} target="_blank" rel="noopener noreferrer">  LINK </a></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    
+    );
+
+  changeActiveItem = (activeItemIndex) => this.setState({ activeItemIndex });
 
   render() {
+    const {
+      activeItemIndex,
+      children,
+    } = this.state;
+
     return (
-      
-    //   <div style={{ padding: `0 ${chevronWidth}px` }}>
-    //   <ItemsCarousel
-    //     requestToChangeActive={setActiveItemIndex}
-    //     activeItemIndex={activeItemIndex}
-    //     numberOfCards={2}
-    //     gutter={20}
-    //     leftChevron={<button>{'<'}</button>}
-    //     rightChevron={<button>{'>'}</button>}
-    //     outsideChevron
-    //     chevronWidth={chevronWidth}
-    //   >
-    //   {this.state.projects.map(project =>
-    //   <div
-    //     key={project.id}
-    //     style={{
-    //       height: 200,
-    //       background: project.image
-    //     }}
-    //   />
-    //   )}
+      <div className = "jumbotron" style={{ height: 600}}>
+        <ItemsCarousel
+        // Placeholder configurations
+        enablePlaceholder
+        numberOfPlaceholderItems={1}
+        minimumPlaceholderTime={1000}
+        placeholderItem={<div style={{ height: 200, background: 'light grey' }}></div>}
 
-    //   </ItemsCarousel>
-    // </div>
+        // Carousel configurations
+        numberOfCards={1}
+        gutter={6}
+        showSlither={true}
+        firstAndLastGutter={true}
+        freeScrolling={false}
 
-      <Jumbotron>
-        <div className="row">
-          {this.state.projects.map(project => (
-            <div className="col-sm-4">
-              <h4>{project.title}</h4>
-              <h6>{project.description}</h6>
-              <Card
-                key = {project.id}
-                id = {project.id}
-                image = {project.image}
-              />
-              <button className="btn btn-secondary">
-                <a href={project.link}>
-                  View Project
-                </a>
-              </button>
-            </div>
-          ))}
-        </div>
-      </Jumbotron>
+        // Active item configurations
+        requestToChangeActive={this.changeActiveItem}
+        activeItemIndex={activeItemIndex}
+        activePosition={'center'}
 
-    );
+        chevronWidth={24}
+        rightChevron={<FontAwesomeIcon icon = {faAngleDoubleRight} size="5x"/>}
+        leftChevron={<FontAwesomeIcon icon = {faAngleDoubleLeft} size="5x" />}
+        outsideChevron={false}
+      >
+        {children}
+      </ItemsCarousel>
+      </div>
+
+    );  
   }
-}
-
-export default Portfolio;
+} 

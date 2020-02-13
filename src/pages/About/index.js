@@ -15,15 +15,17 @@ function About() {
             <div className="row">
                 <div className="col-lg-3 col-md-3 col-sm-8">
                     <img src={Picture} alt="portfolio" className="portfolio-picture"/>
-                    <div> A deep appreciation of algorithms and a relentless drive to solve a problem are the cornerstone of my work ethos. </div>
+                    <div> A deep appreciation of algorithms and a relentless drive to solve a problem are the cornerstone of my work ethic. </div>
                 </div>
                 <div className="desktop-only col-9">
                   <p className="left-align">
-                    <strong> Brand Statement: </strong>
+                    <strong> About Me : </strong>
                   </p>
                   <p className="left-align tab">
                     A Mathematician with experience as a Data Scientist, Database Architect and Full stack web developer who is excited to develop responsive, user friendly and fluid applications / websites. 
-                    I received my Bachelor of Science in Discrete Mathematics from Georgiatech in 2009 and a Full stack web development certificate from George Washington University in 2019. 
+                    I received my Bachelor of Science in Discrete Mathematics from Georgiatech in 2009 and a Full stack web development certificate from George Washington University in 2019.                  
+                  </p>
+                  <p className="left-align tab">
                     Successfully modernized a seafood company by migrating their business processes from a legacy database system in FoxPro to a modern ERP mounted over Postgres SQL and in the process optimized business process to best practices. 
                     After the migration process the company was able to reduce the lag on the end of month closing from 60 days to 10 days and have access to a myriad of new reports (customizable on request) to use in the decision-making process. 
                     With healthy business processes (and data) in place time series forecasts and data relations were developed to be used in an algorithmic construction of the annual budget.
