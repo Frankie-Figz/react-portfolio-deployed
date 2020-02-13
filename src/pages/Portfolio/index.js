@@ -4,8 +4,13 @@ import projects from "../../projects.json";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngleDoubleLeft, faAngleDoubleRight } from '@fortawesome/free-solid-svg-icons';
 import "./style.css";
+import Button from 'react-bootstrap/Button';
 
 export default class Portfolio extends React.Component {
+
+  openLink(urlString) {
+    window.open(urlString) 
+  }
 
   componentWillMount() {
     this.setState({
@@ -32,7 +37,10 @@ export default class Portfolio extends React.Component {
             <div> <strong> Project Name : </strong> {project.title} </div>
             <div> <strong> Description : </strong> {project.description} </div>
             <div> <strong> Technology stack : </strong> {project.techstack} </div>
-            <div> <strong> Deployment Link : </strong> <a href = {project.link} target="_blank" rel="noopener noreferrer">  LINK </a></div>
+            {/* <div> <strong> Deployment Link : </strong> <a href = {project.link} target="_blank" rel="noopener noreferrer">  LINK </a></div> */}
+
+            <Button href = {project.link} target="_blank" rel="noopener noreferrer" variant = "secondary" > Test Run </Button>
+
           </div>
         </div>
 
